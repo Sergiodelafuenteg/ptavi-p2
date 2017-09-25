@@ -19,11 +19,18 @@ class Calculadora:
 
          return self.value1 - self.value2
 
-if __init__ == "__main__":
+if __name__ == "__main__":
 
     try:
-        objeto = Calculadora("simple")
-        Calculadora.init(sys.argv(1), sys.argv(3))
-        print ("jajajaja")
+        value1 = int(sys.argv[1])
+        value2 = int(sys.argv[3])
+        operador = sys.argv[2]
+        calculadorabasic = Calculadora(value1, value2)
     except ValueError:
         sys.exit("Error: Non numerical parameters")
+
+    print ("jajajaja")
+    if operador == 'sum':
+        calculadorabasic.sum()
+    elif operador == 'rest':
+        calculadorabasic.minus()
