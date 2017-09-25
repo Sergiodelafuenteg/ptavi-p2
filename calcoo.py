@@ -10,7 +10,6 @@ class Calculadora:
         """initialize selfs"""
         self.value1 = value1
         self.value2 = value2
-        #self.operador = operador
     def sum(self):
         """add values"""
         return self.value1 + self.value2
@@ -22,7 +21,7 @@ class Calculadora:
 if __name__ == "__main__":
 
     if len(sys.argv) != 4:
-        sys.exit("Usalo asi: python3 ca.py operando 1 operador operando 2")
+        sys.exit("Usalo asi: python3 calcoo.py operando 1 operador operando 2")
 
     try:
         value1 = int(sys.argv[1])
