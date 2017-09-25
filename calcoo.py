@@ -11,11 +11,11 @@ class Calculadora:
         self.value1 = value1
         self.value2 = value2
         #self.operador = operador
-    def sum():
+    def sum(self):
 
          return self.value1 + self.value2
 
-    def minus():
+    def minus(self):
 
          return self.value1 - self.value2
 
@@ -31,6 +31,7 @@ if __name__ == "__main__":
 
     print ("jajajaja")
     if operador == 'sum':
-        calculadorabasic.sum()
+        resultado = calculadorabasic.sum()
     elif operador == 'rest':
-        calculadorabasic.minus()
+        resultado = calculadorabasic.minus()
+    print (resultado)
