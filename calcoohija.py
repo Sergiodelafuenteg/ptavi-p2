@@ -26,11 +26,11 @@ class CalculadoraHija(Calculadora):
         """Aggregate Values"""
         self.value1 = value1
         self.value2 = value2
-    def sum(self):
+    def multi(self):
         """multiply values"""
         return self.value1 * self.value2
 
-    def minus(self):
+    def divide(self):
         """divide values"""
         return self.value1 / self.value2
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     elif operador == 'multi':
         resultado = calculadora.multi()
     elif operador == 'div':
-        resultado = calculadora.div()
+        resultado = calculadora.divide()
     else:
         sys.exit("Error: Only sum(add) or rest(substract)")
 
