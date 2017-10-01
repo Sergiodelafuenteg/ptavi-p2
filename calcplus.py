@@ -4,9 +4,9 @@
 import sys
 import calcoohija
 
-file_calc = open(sys.argv[1])
+file_calc = open(sys.argv[1], 'r')
 
-for line in file_calc.readlines():
-    args = line[:line.find(',')]
-
+args = file_calc.read()
+args = args.split(',')
 print (args)
+print (args[0])
