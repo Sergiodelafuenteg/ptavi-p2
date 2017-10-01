@@ -2,27 +2,13 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import calcoo
 
-class Calculadora:
-    """class for sum and substract."""
-
-    def __init__(self, value1, value2):
-        """initialize selfs"""
-        self.value1 = value1
-        self.value2 = value2
-    def sum(self):
-        """add values"""
-        return self.value1 + self.value2
-
-    def minus(self):
-        """substract values"""
-        return self.value1 - self.value2
-
-class CalculadoraHija(Calculadora):
+class CalculadoraHija(calcoo.Calculadora):
     """Class for multiply and divide"""
     def __init__(self, value1, value2):
         """initialize selfs"""
-        Calculadora.__init__(self, value1, value2)
+        calcoo.Calculadora.__init__(self, value1, value2)
         """Aggregate Values"""
         self.value1 = value1
         self.value2 = value2
