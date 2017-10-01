@@ -12,7 +12,7 @@ class CalculadoraHija(calcoo.Calculadora):
         """Aggregate Values"""
         self.value1 = value1
         self.value2 = value2
-    def multi(self):
+    def multiplica(self):
         """multiply values"""
         return self.value1 * self.value2
 
@@ -39,11 +39,11 @@ if __name__ == "__main__":
         sys.exit("Error: Non numerical parameters")
 
     if operador == 'suma':
-        resultado = calculadora.sum()
+        resultado = calculadora.suma()
     elif operador == 'resta':
-        resultado = calculadora.minus()
+        resultado = calculadora.resta()
     elif operador == 'multiplica':
-        resultado = calculadora.multi()
+        resultado = calculadora.multiplica()
     elif operador == 'divide':
         resultado = calculadora.divide()
     else:
