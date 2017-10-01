@@ -10,11 +10,11 @@ class Calculadora:
         """initialize selfs"""
         self.value1 = value1
         self.value2 = value2
-    def sum(self):
+    def suma(self):
         """add values"""
         return self.value1 + self.value2
 
-    def minus(self):
+    def resta(self):
         """substract values"""
         return self.value1 - self.value2
 
@@ -31,9 +31,9 @@ if __name__ == "__main__":
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
-    if operador == 'sum':
+    if operador == 'suma':
         resultado = calculadorabasic.sum()
-    elif operador == 'rest':
+    elif operador == 'resta':
         resultado = calculadorabasic.minus()
     else:
         sys.exit("Error: Only sum(add) or rest(substract)")
