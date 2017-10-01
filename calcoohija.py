@@ -38,13 +38,13 @@ if __name__ == "__main__":
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
-    if operador == 'sum':
+    if operador == 'suma':
         resultado = calculadora.sum()
-    elif operador == 'rest':
+    elif operador == 'resta':
         resultado = calculadora.minus()
-    elif operador == 'multi':
+    elif operador == 'multiplica':
         resultado = calculadora.multi()
-    elif operador == 'div':
+    elif operador == 'divide':
         resultado = calculadora.divide()
     else:
         sys.exit("Error: Only sum(add) or rest(substract)")
