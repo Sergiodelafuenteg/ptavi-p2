@@ -32,6 +32,10 @@ class CalculadoraHija(Calculadora):
 
     def divide(self):
         """divide values"""
+        try:
+            self.value1 / self.value2
+        except ZeroDivisionError:
+            sys.exit("No se dividir por cero")
         return self.value1 / self.value2
 
 
@@ -41,8 +45,8 @@ if __name__ == "__main__":
         sys.exit("Usalo asi: python3 calcoo.py operando 1 operador operando 2")
 
     try:
-        value1 = int(sys.argv[1])
-        value2 = int(sys.argv[3])
+        value1 = float(sys.argv[1])
+        value2 = float(sys.argv[3])
         operador = sys.argv[2]
         calculadora = CalculadoraHija(value1, value2)
     except ValueError:
