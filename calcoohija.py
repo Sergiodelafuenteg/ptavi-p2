@@ -4,14 +4,17 @@
 import sys
 import calcoo
 
+
 class CalculadoraHija(calcoo.Calculadora):
     """Class for multiply and divide"""
+
     def __init__(self, value1, value2):
         """initialize selfs"""
         calcoo.Calculadora.__init__(self, value1, value2)
         """Aggregate Values"""
         self.value1 = value1
         self.value2 = value2
+
     def multiplica(self):
         """multiply values"""
         return self.value1 * self.value2
@@ -49,4 +52,4 @@ if __name__ == "__main__":
     else:
         sys.exit("Error: Only sum(add) or rest(substract)")
 
-    print (resultado)
+    print(resultado)
