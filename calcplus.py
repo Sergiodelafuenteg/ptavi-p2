@@ -3,20 +3,14 @@
 
 import sys
 import calcoohija
-import os
 
 file_calc = open(sys.argv[1], 'r')
 
 lines = file_calc.readlines()
 
-#resultado = {}
-
-"""evito saltos de linea"""
-
 for line in lines:
     args = line.split(',')
     operador = args[0]
-    print (args[1])
     resultado = int(args[1])
     for arg in args[2:]:
         if operador == 'suma':
@@ -27,7 +21,4 @@ for line in lines:
             resultado = calcoohija.CalculadoraHija(int(arg),resultado).multiplica()
         if operador == 'divide':
             resultado = calcoohija.CalculadoraHija(resultado,int(arg)).divide()
-
-#args = args.remove('\n')
-
-print ('resultado = %s' % (resultado))
+    print (resultado)
