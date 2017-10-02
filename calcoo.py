@@ -3,16 +3,16 @@
 
 import sys
 
-class Calculadora:
 
+class Calculadora:
 
     """class for sum and substract."""
     def __init__(self, value1, value2):
         """initialize selfs"""
         self.value1 = value1
         self.value2 = value2
-    def suma(self):
 
+    def suma(self):
         """add values"""
         return self.value1 + self.value2
 
