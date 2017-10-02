@@ -6,7 +6,14 @@ import calcoohija
 
 file_calc = open(sys.argv[1], 'r')
 
-args = file_calc.read()
-args = args.split(',')
+args = file_calc.readlines()
+
+"""evito saltos de linea"""
+
+#args = args.remove('\n')
 print (args)
+
+for i in args:
+    i.rstrip(['\n'])
+
 print (args[0])
