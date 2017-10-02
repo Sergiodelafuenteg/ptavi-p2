@@ -4,8 +4,8 @@
 import sys
 
 class Calculadora:
-    """class for sum and substract."""
 
+    """class for sum and substract."""
     def __init__(self, value1, value2):
         """initialize selfs"""
         self.value1 = value1
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     else:
         sys.exit("Error: Only sum(add) or rest(substract)")
 
-    print (resultado)
+    print(resultado)
