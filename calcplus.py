@@ -16,17 +16,17 @@ lines = file_calc.readlines()
 for line in lines:
     args = line.split(',')
     operador = args[0]
-    resultado = 0
-    for arg in args[1:]:
-
+    print (args[1])
+    resultado = int(args[1])
+    for arg in args[2:]:
         if operador == 'suma':
             resultado = calcoohija.CalculadoraHija(int(arg),resultado).suma()
         if operador == 'resta':
-            resultado = calcoohija.CalculadoraHija(int(arg),resultado).resta()
+            resultado = calcoohija.CalculadoraHija(resultado,int(arg)).resta()
         if operador == 'multiplica':
             resultado = calcoohija.CalculadoraHija(int(arg),resultado).multiplica()
         if operador == 'divide':
-            resultado = calcoohija.CalculadoraHija(int(arg),resultado).divide()
+            resultado = calcoohija.CalculadoraHija(resultado,int(arg)).divide()
 
 #args = args.remove('\n')
 
