@@ -14,11 +14,11 @@ with open(sys.argv[1]) as file_calc:
         resultado = int(line[1])
         for arg in line[2:]:
             if operador == 'suma':
-                resultado = calcoohija.CalculadoraHija(int(arg),resultado).suma()
+                resultado = calcoohija.CalculadoraHija(int(arg), resultado).suma()
             if operador == 'resta':
-                resultado = calcoohija.CalculadoraHija(resultado,int(arg)).resta()
+                resultado = calcoohija.CalculadoraHija(resultado, int(arg)).resta()
             if operador == 'multiplica':
-                resultado = calcoohija.CalculadoraHija(int(arg),resultado).multiplica()
+                resultado = calcoohija.CalculadoraHija(int(arg), resultado).multiplica()
             if operador == 'divide':
-                resultado = calcoohija.CalculadoraHija(resultado,int(arg)).divide()
-        print (resultado)
+                resultado = calcoohija.CalculadoraHija(resultado, int(arg)).divide()
+        print(resultado)
